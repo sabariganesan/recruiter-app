@@ -4,12 +4,12 @@ import { useDispatch } from "react-redux"
 import { Btn } from "../../components/Controls/Button/Button";
 import { InputField } from "../../components/Controls/InputField/InputField";
 import Loader from "../../components/Loader/Loader";
-import * as type from "../../sagas/Feature1/FeatureTypes"
+import { GET_DATA_REQUEST } from "../../sagas/type";
 
 function Home() {
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch({ type: type.GET_DATA_REQUEST })
+    dispatch({ type: GET_DATA_REQUEST })
   }, [])
 
   return (
