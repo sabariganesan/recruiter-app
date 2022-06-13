@@ -1,4 +1,4 @@
-import { axiosInstance } from '../../network/apis';
+import { axiosInstance } from "../../network/apis";
 
 // Replace endpoint and change api name
 export const apiExampleRequest = async () => {

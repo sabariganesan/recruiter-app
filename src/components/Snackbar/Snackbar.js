@@ -1,8 +1,7 @@
 import React from "react";
-import Snackbar from "@material-ui/core/Snackbar";
 
 
-export function MaterialSnackbar(props) {
+export function MaterialSnackbar() {
 
   return (
     <div>

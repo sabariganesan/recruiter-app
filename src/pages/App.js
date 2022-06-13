@@ -1,5 +1,6 @@
-import RouterPage from '../routes';
-import './App.css';
+/* eslint-disable react/react-in-jsx-scope */
+import RouterPage from "../routes";
+import "./App.css";
 
 function App() {
   return (
