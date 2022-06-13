@@ -1,16 +1,16 @@
 import React from "react"
 import Home from "../../pages/Home/Home"
 import ErrorBountries from "../../utils/ErrorBoundaries"
-import PrivateRoute from "../../utils/PrivateRoute"
+// import PrivateRoute from "../../utils/PrivateRoute"
 
 function HomeContainer() {
   return (
     <>
-      <PrivateRoute>
-        <ErrorBountries>
-          <Home />
-        </ErrorBountries>
-      </PrivateRoute>
+      {/* <PrivateRoute> */}
+      <ErrorBountries>
+        <Home />
+      </ErrorBountries>
+      {/* </PrivateRoute> */}
     </>
   )
 }

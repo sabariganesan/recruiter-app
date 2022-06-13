@@ -1,18 +1,17 @@
 import { call, put } from "redux-saga/effects";
 import API from "./FeatureApis";
-import * as ACTIONS from "./FeatureAction";
-// import { dispatchSnackbarError } from "../../utils/Shared";
 import { takeLatest } from "redux-saga/effects";
 import * as TYPES from "./FeatureTypes";
+import { featureFetchRejected, getFeatureData } from "./FeatureSlice";
 
 // Replace with your sagas
 export function* sagasRequestExample() {
   try {
     const response = yield call(API.apiExampleRequest);
     console.log(response);
-    yield put(ACTIONS.actionReceive(response));
+    yield put(getFeatureData(response));
   } catch (err) {
-    // dispatchSnackbarError(err.response.data);
+    yield put(featureFetchRejected(err));
   }
 }
 

@@ -1,8 +1,8 @@
 import { combineReducers } from "redux"
-import { feature } from "../sagas/Feature1/FeatureReducer"
 import { loaderReducer } from "../sagas/Loader/LoaderReducer"
+import FeatureSlice from "../sagas/Feature1/FeatureSlice"
 
 export const rootReducer = combineReducers({
-  feature,
-  loader: loaderReducer
+  loader: loaderReducer,
+  feature:FeatureSlice
 })
